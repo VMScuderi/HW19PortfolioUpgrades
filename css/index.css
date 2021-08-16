@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: #010101;
+}
+
+@media screen and (max-width: 600px) {
+  .navContainer {
+    float: none;
+    width: 100%;
+  }
+}
+
+.header{
+display: flex;
+justify-content: space-evenly;
+height: 11vh;
+width: 100vw;
+background:transparent;
+}
+
+.logoContainer{
+    width: 50%;
+    margin-top: 1%;
+    margin-left: 4%;
+    color:#c4c4c4;
+    font-family: "alex brush", cursive;
+    font-size:x-large; 
+}
+
+.navContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-family: ds-digital;
+    font-weight: lighter;
+    color:#c4c4c4;
+    text-align:center;
+    margin-top: 2%;
+    margin-right: 1.2%;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    height: 61vh;
+    background-image: url("../images/daw.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 92vw;
+    opacity: 15%;
+    }
+    
+    .leftHeroBlank{
+        width: 20%;
+        background:transparent;
+    }
+    
+    .ctrHeroText{
+        background:transparent;
+    }
+     
+    .intro {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: monospace;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        color: whitesmoke;
+        text-align: center;
+        background: transparent;
+      }
+
+    .rightHeroPic{
+        height: 100%;
+        width: 20%;
+        background:transparent;
+    }
+
+    .foregrd {
+        position: absolute;
+        float: right;
+        right: 0%;
+             bottom: 0%;
+                    vertical-align: bottom;
+                    z-index: 100;
+                    background-color: transparent;
+                        }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        height: 28vh;
+        background-image: url("../images/blackwood.jpg");
+        }
+        
+        .phonesContainer{
+            width: 20%;
+            background-color: transparent;
+        }
+
+        .phones{
+            width: 19%;
+            margin-left: 5%;
+            position: absolute;
+            bottom: 0%;
+            background-color: transparent;
+            filter: brightness(0.8) contrast(1.1);
+        }
+
+        .boardContainer{
+            width: 60%;
+            background-color: transparent;
+            background-image: url("../images/board.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60%;
+        }
+
+        .padContainer{
+            display: flex;
+            justify-content: center;
+            height: 95%;
+            width: 35%;
+            margin-left: 28%;
+            background-color: transparent;
+            flex-wrap: wrap;
+            gap: 1.5%;
+        }
+
+
+        .faxpad{
+            box-shadow: 0px 1px 2px 2px #FF00C7;
+            height: 38%;
+            margin-top: 6%;
+            flex-wrap: wrap;
+        }
+
+        .sklzpad{
+            box-shadow: 0px 1px 2px 2px #00FFE1;
+            height: 38%;
+            margin-top: 6%;
+        }
+
+        .prjxpad{
+            box-shadow: 0px 1px 2px 2px #14EC11;
+            height: 38%;
+            margin-top: 6%;
+        }
+
+        .mailpad{
+            box-shadow: 0px 1px 2px 2px #EC4915;
+            height: 38%;
+            margin-top: 6%;
+        }
+
+        .rsmepad{
+            box-shadow: 0px 1px 2px 2px #FF0035;
+            height: 38%;
+            margin-bottom: 5%;
+        }
+
+        .lnkdpad{
+            box-shadow: 0px 1px 2px 2px #0600FF;
+            height: 38%;
+            margin-bottom: 5%;
+        }
+
+        .gitpad{
+            box-shadow: 0px 1px 2px 2px #BD00FF;
+            height: 38%;
+            margin-bottom: 5%;
+        }
+
+        .behcpad{
+            box-shadow: 0px 1px 2px 2px #FCFF55;
+            height: 38%;
+            margin-bottom: 5%;
+        }
+
+        .mouseContainer{
+            width: 20%;
+            background-image: url("../images/mouse.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40%;
+            background-position-x: -16%;
+            background-color: transparent;
+            filter: brightness(1) contrast(1.29);
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 0%;
+            right: -5%;
+            font-family: monospace;
+            font-weight: bold;
+            color: #f5f5f5;
+            transform: translate(-50%, -50%);
+            text-align: right;
+            z-index: 200;
+            background-color: unset;
+          }
+
+          
+.volbar {
+    position: absolute;
+    right: 590px;
+    bottom: 35px;
+    font-family: ds-digital;
+    font-weight: normal;
+    color: #f5f5f5;
+    text-align: center;
+    background: transparent;
+  }
+
+  .vol{
+      background:transparent;
+  }
+  
+  .trkbar {
+    position: absolute;
+    right: 535px;
+    bottom: 35px;
+    font-family: ds-digital;
+    font-weight: normal;
+    color: #f5f5f5;
+    text-align: center;
+    background: transparent;
+  }
+  
+  .fader {
+    position: absolute;
+    right: 597px;
+    bottom: 70px;
+    background: transparent;
+  }
+  
+  .faderr {
+    position: absolute;
+    right: 540px;
+    bottom: 119px;
+    background: transparent;
+  }
+
+  .grid {
+    position: absolute;
+    display: grid;
+    right: 45%;
+    bottom: 35%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "arrow preload";
+  }
+
+  .gridChild {
+    height: 0px;
+  }
+
+  .preload {
+    grid-area: preload;
+    text-align: center;
+  }
+  .slide {
+    animation: slideArrow 1.8s infinite;
+  }
+ @keyframes slideArrow {
+    from {
+      margin-right: -5vh;
+    }
+    50% 
+    {
+      margin-right: 30vh;
+    }
+    to {
+      margin-right: -5vh;
+    }
+  }
+
+  .slide {
+    box-shadow: 2px 2px 2px 2px whitesmoke;
+  }
+
+  .controls{
+      position: absolute;
+      left: 27%;
+      top: 4.5%;
+      height: 3%;
+      box-shadow: 0px 0px 8px 8px whitesmoke;
+      border-radius: 100%;
+      opacity: 0.1;
+  }
