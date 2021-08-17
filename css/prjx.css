@@ -277,14 +277,14 @@ overflow-y: hidden;
           
   .fader {
     position: absolute;
-    right: 597px;
+    right: 587px;
     bottom: 85px;
     background: transparent;
   }
   
   .faderr {
     position: absolute;
-    right: 540px;
+    right: 530px;
     bottom: 122px;
     background: transparent;
   }
