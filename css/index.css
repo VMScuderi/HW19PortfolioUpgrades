@@ -19,7 +19,7 @@ background-color: #010101;
 }
 
 .logoContainer{
-    width: 50%;
+    width: 70%;
     margin-top: 1%;
     margin-left: 5%;
     color:#c4c4c4;
@@ -31,13 +31,13 @@ background-color: #010101;
 .navContainer{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 30%;
     color:#c4c4c4;
     font-family: ds-digital;
     font-weight:lighter;
-    text-align:center;
+    text-align:right;
     margin-top: 2%;
-padding-right: 1.5%;
+margin-right: 5.5%;
 }
 
 .hero{
@@ -342,10 +342,11 @@ padding-right: 1.5%;
 
   .controls{
       position: absolute;
-      left: 28%;
+      left: 39%;
       top: 5%;
+      opacity: 0.1;
       height: 2%;
       box-shadow: 0px 0px 8px 8px whitesmoke;
-      border-radius: 50%;
-      opacity: 0.1;
+      border-radius: 25%;
+      
   }
