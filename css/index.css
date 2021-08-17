@@ -1,8 +1,7 @@
-*{
+* {
   margin: 0;
   list-style: none;
   text-decoration: none;
-  background-color: #010101;
 }
 
 @media screen and (max-width: 600px) {
@@ -15,41 +14,41 @@
 .header{
 display: flex;
 justify-content: space-evenly;
-height: 11vh;
-width: 100vw;
-background:transparent;
+height: 10vh;
+background-color: #010101;
 }
 
 .logoContainer{
     width: 50%;
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 5%;
     color:#c4c4c4;
     font-family: "alex brush", cursive;
     font-size:x-large; 
+    padding-left: 0.5%;
 }
 
 .navContainer{
     display: flex;
     justify-content: space-around;
     width: 50%;
-    font-family: ds-digital;
-    font-weight: lighter;
     color:#c4c4c4;
+    font-family: ds-digital;
+    font-weight:lighter;
     text-align:center;
     margin-top: 2%;
-    margin-right: 1.2%;
+padding-right: 1.5%;
 }
 
 .hero{
     display: flex;
     justify-content: space-evenly;
-    height: 61vh;
+    height: 60vh;
     background-image: url("../images/daw.png"); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 92vw;
-    opacity: 15%;
+    background-size: 100vw;
+    background-color: #010101;
     }
     
     .leftHeroBlank{
@@ -63,23 +62,17 @@ background:transparent;
      
     .intro {
         position: absolute;
-        top: 45%;
+        top: 42%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: monospace;
         font-weight: bold;
         letter-spacing: 1px;
-        line-height: 1.3;
+        line-height: 1.5;
         color: whitesmoke;
         text-align: center;
         background: transparent;
       }
-
-    .rightHeroPic{
-        height: 100%;
-        width: 20%;
-        background:transparent;
-    }
 
     .foregrd {
         position: absolute;
@@ -88,27 +81,25 @@ background:transparent;
              bottom: 0%;
                     vertical-align: bottom;
                     z-index: 100;
-                    background-color: transparent;
                         }
 
     .footer{
         display: flex;
         justify-content: center;
-        height: 28vh;
+        height: 30vh;
         background-image: url("../images/blackwood.jpg");
-        }
+        background-size: 100vw;
+      }
         
         .phonesContainer{
             width: 20%;
-            background-color: transparent;
         }
 
         .phones{
-            width: 19%;
+            width: 20%;
             margin-left: 5%;
             position: absolute;
             bottom: 0%;
-            background-color: transparent;
             filter: brightness(0.8) contrast(1.1);
         }
 
@@ -118,68 +109,139 @@ background:transparent;
             background-image: url("../images/board.png"); 
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 60%;
+            background-size: 65%;
         }
 
         .padContainer{
             display: flex;
             justify-content: center;
-            height: 95%;
-            width: 35%;
-            margin-left: 28%;
-            background-color: transparent;
+            height: 90%;
+            width: 38%;
+            margin-left: 26%;
             flex-wrap: wrap;
-            gap: 1.5%;
+            gap: 2.5%;
+            row-gap: 0.5%;
         }
 
 
         .faxpad{
             box-shadow: 0px 1px 2px 2px #FF00C7;
-            height: 38%;
-            margin-top: 6%;
-            flex-wrap: wrap;
+            margin: 6% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .sklzpad{
             box-shadow: 0px 1px 2px 2px #00FFE1;
-            height: 38%;
-            margin-top: 6%;
+            margin: 6% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .prjxpad{
             box-shadow: 0px 1px 2px 2px #14EC11;
-            height: 38%;
-            margin-top: 6%;
+            margin: 6% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .mailpad{
             box-shadow: 0px 1px 2px 2px #EC4915;
-            height: 38%;
-            margin-top: 6%;
+            margin: 6% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .rsmepad{
             box-shadow: 0px 1px 2px 2px #FF0035;
-            height: 38%;
-            margin-bottom: 5%;
+            margin: 0% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .lnkdpad{
             box-shadow: 0px 1px 2px 2px #0600FF;
-            height: 38%;
-            margin-bottom: 5%;
+            margin: 0% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .gitpad{
             box-shadow: 0px 1px 2px 2px #BD00FF;
-            height: 38%;
-            margin-bottom: 5%;
+            margin: 0% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .behcpad{
             box-shadow: 0px 1px 2px 2px #FCFF55;
-            height: 38%;
-            margin-bottom: 5%;
+            margin: 0% 0% 0% 0%;
+            height: 40%;
+            width: 21%;
+            font-family: ds-digital;
+            font-weight: lighter;
+            color:#c4c4c4;
+            padding-left: 1%;
+            background-image: url("../images/blankPad.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 110%;
         }
 
         .mouseContainer{
@@ -189,7 +251,6 @@ background:transparent;
             background-position: center;
             background-size: 40%;
             background-position-x: -16%;
-            background-color: transparent;
             filter: brightness(1) contrast(1.29);
         }
 
@@ -198,18 +259,17 @@ background:transparent;
             bottom: 0%;
             right: -5%;
             font-family: monospace;
-            font-weight: bold;
+            font-weight: lighter;
             color: #f5f5f5;
             transform: translate(-50%, -50%);
             text-align: right;
             z-index: 200;
-            background-color: unset;
           }
 
           
 .volbar {
     position: absolute;
-    right: 590px;
+    right: 580px;
     bottom: 35px;
     font-family: ds-digital;
     font-weight: normal;
@@ -224,7 +284,7 @@ background:transparent;
   
   .trkbar {
     position: absolute;
-    right: 535px;
+    right: 525px;
     bottom: 35px;
     font-family: ds-digital;
     font-weight: normal;
@@ -235,14 +295,14 @@ background:transparent;
   
   .fader {
     position: absolute;
-    right: 597px;
+    right: 587px;
     bottom: 70px;
     background: transparent;
   }
   
   .faderr {
     position: absolute;
-    right: 540px;
+    right: 530px;
     bottom: 119px;
     background: transparent;
   }
@@ -251,7 +311,7 @@ background:transparent;
     position: absolute;
     display: grid;
     right: 45%;
-    bottom: 35%;
+    bottom: 37%;
     grid-template-rows: 1fr;
     grid-template-areas: "arrow preload";
   }
@@ -269,27 +329,23 @@ background:transparent;
   }
  @keyframes slideArrow {
     from {
-      margin-right: -5vh;
+      margin-right: -6vh;
     }
     50% 
     {
       margin-right: 30vh;
     }
     to {
-      margin-right: -5vh;
+      margin-right: -6vh;
     }
-  }
-
-  .slide {
-    box-shadow: 2px 2px 2px 2px whitesmoke;
   }
 
   .controls{
       position: absolute;
-      left: 27%;
-      top: 4.5%;
-      height: 3%;
+      left: 28%;
+      top: 5%;
+      height: 2%;
       box-shadow: 0px 0px 8px 8px whitesmoke;
-      border-radius: 100%;
+      border-radius: 50%;
       opacity: 0.1;
   }
