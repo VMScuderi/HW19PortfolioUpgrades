@@ -67,6 +67,10 @@ background-color: #010101;
     margin: auto;
     background:#010101;
     height: 96%;
+    background-image: url("../images/beachmail.png"); 
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100vh;
 }
 
     .footer{
@@ -288,11 +292,14 @@ background-color: #010101;
 
   #delayedText{
     position: absolute;
-    top: 52%;
-    left: 85%;
+    top: 40%;
+    right: 10%;
     transform: translate(-50%, -50%);
+    text-align: center;
     color: #c4c4c4;
     font-family: monospace, sans-serif;
+    font-size: large;
+    font-weight: lighter;
     letter-spacing: 0.5px;
     background: transparent;
   }
