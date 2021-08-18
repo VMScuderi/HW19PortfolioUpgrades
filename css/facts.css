@@ -288,11 +288,12 @@ background-color: #010101;
 
   #delayedText{
     position: absolute;
-    top: 52%;
-    left: 85%;
+    top: 40%;
+    left: 12%;
     transform: translate(-50%, -50%);
     color: #c4c4c4;
     font-family: monospace, sans-serif;
+    font-size: larger;
     letter-spacing: 0.5px;
     background: transparent;
   }

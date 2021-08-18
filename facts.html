@@ -32,20 +32,22 @@
         <div class="faxBox">
         <!-- Some hidden text that fades in and out in small line-by-line sentences like my Figma prototype of this section needs to go here. 
             The below code might help get you started --> 
-        <script>
-            window.onload = function(){
-              var theDelay = 10;
-              var timer = setTimeout("showText()",theDelay*1000)
-            }
-            function showText(){
-              document.getElementById("delayedText").style.visibility = "visible";
-            }
-      </script>
-           
-      <div id="delayedText" style="visibility:hidden" background="unset"><h3>
-        Some text.~
-      </h3></div>
-      </div>
+
+            <script>
+              window.onload = function(){
+                var theDelay = 4;
+                var timer = setTimeout("showText()",theDelay*1000)
+              }
+              function showText(){
+                document.getElementById("delayedText").style.visibility = "visible";
+              }
+        </script>
+             
+        <div id="delayedText" style="visibility:hidden" background="unset"><h3>
+         Visit my
+          <br>
+           "PRJX" <br>section<br>to view<br>these<br>skills <br>in<br>action!~
+        </h3></div>
     </hero>
 
     <footer class="footer">

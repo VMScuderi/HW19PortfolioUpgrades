@@ -293,9 +293,9 @@
     transform: translate(-50%, -50%);
     color: #c4c4c4;
     font-family: monospace, sans-serif;
-    font-size: larger;
-    letter-spacing: 0.5px;
+    font-size: medium;
     background: transparent;
+    text-align: center;
   }
 
   .controls{
@@ -313,7 +313,7 @@
     position: absolute;
     display: grid;
     right: 10%;
-    top: 15%;
+    top: 16%;
     grid-template-rows: 1fr;
     grid-template-areas: "arrow preload";
   }

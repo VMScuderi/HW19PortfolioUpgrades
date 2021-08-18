@@ -62,6 +62,7 @@ background-color: #010101;
     
 .mailBox{
     display: flex;
+    justify-content: center;
     width: 66%;
     box-shadow: 0px 0px 5px 5px #EC4915;
     margin: auto;
@@ -72,6 +73,8 @@ background-color: #010101;
     background-position: left;
     background-size: 100vh;
 }
+
+
 
     .footer{
         display: flex;
