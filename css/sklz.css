@@ -61,7 +61,8 @@
     }
     
 .sklzBox{
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 66%;
     box-shadow: 0px 0px 5px 5px #00FFE1;
     margin: auto;
@@ -237,11 +238,15 @@
     top: 40%;
     left: 12%;
     transform: translate(-50%, -50%);
-    color: #c4c4c4;
-    font-family: monospace, sans-serif;
-    font-size: medium;
-    background: transparent;
-    text-align: center;
+    text-align: right;
+    vertical-align: top;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: larger;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    opacity: 0.5;
   }
 
   .controls{
