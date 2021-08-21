@@ -75,7 +75,7 @@ background-color: #010101;
     height: 96%;
     box-shadow: 0px 0px 5px 5px #14EC11;
     margin: auto;
-    background-color: transparent;
+    background-color: #010101;
   overflow-x: scroll;
   overflow-y: hidden;
 }
