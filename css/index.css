@@ -265,7 +265,7 @@ margin-right: 5.5%;
     text-align: center;
   }
   .slide {
-    animation: slideArrow 2s infinite;
+    animation: slideArrow 1.9s infinite;
   }
  @keyframes slideArrow {
     from {
