@@ -11,6 +11,15 @@
     }
   }
   
+  .controls{
+    position: absolute;
+    left: 38%;
+    top: 5%;
+    opacity: 0.1;
+    height: 2%;
+    box-shadow: 0px 0px 8px 8px whitesmoke;
+    border-radius: 25%;
+}
 .foregrd {
     position: absolute;
     float: right;
@@ -60,21 +69,54 @@ background-color: #010101;
     background-color: #010101;
     }
     
-    
 .prjxBox{
-    display: flex;
+  display: flex;
     width: 66%;
+    height: 96%;
     box-shadow: 0px 0px 5px 5px #14EC11;
     margin: auto;
-    justify-content: left;
-    background:#010101;
-height: 96%;
-scroll-snap-type: x mandatory;
-overflow-x: scroll;
+    background-color: transparent;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-.child{
-  scroll-snap-align: center;
+.tech-slideshow {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tech-slideshow > div {
+  height: 100%;
+  width: 152vw;
+}
+.tech-slideshow .child {
+  animation: moveSlideshow 18s linear alternate-reverse infinite;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-100%);  
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: none;
 }
 
 .footer{
@@ -246,7 +288,7 @@ overflow-x: scroll;
           #delayedText{
             position: absolute;
             top: 40%;
-            left: 11%;
+            right: 16%;
             transform: translate(-50%, -50%);
             text-align: right;
             vertical-align: top;
@@ -257,4 +299,5 @@ overflow-x: scroll;
             letter-spacing: 1px;
             line-height: 1.5;
             opacity: 0.7;
+            z-index: 0;
           }

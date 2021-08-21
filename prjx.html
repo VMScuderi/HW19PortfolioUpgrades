@@ -13,6 +13,12 @@
         <a href="index.html" style="color: #c4c4c4"><H1>Vito Scuderi</H1></a>
       </logoContainer>
 
+      <audio controls volume="0.1" autoplay class="controls"> 
+        <!-- One or more source files, each referencing the same audio but in a different file format. 
+          The browser will choose the first file which it is able to play. --> 
+          <source src="mp3prjx.ogg"> <source src="mp3prjx.mp3"> Native audio playback is not supported. 
+          <!-- You could use this fall-back feature to insert a JavaScript-based audio player. --> </audio>
+      
       <navContainer class="navContainer">
         <a href="facts.html" style="width:10vw;height:10vh;border:0px solid grey; color:#c4c4c4"><H1>#FAX</H1></a>
         <a href="sklz.html" style="width:10vw;height:10vh;border:0px solid grey; color:#c4c4c4"><H1>SKLZ</H1></a>
@@ -23,9 +29,11 @@
 
     <hero class="hero">
         <div class="prjxBox">
-        <div class="child"><img src="images/casestudyone.png" alt="CaseStudy1" height="100%"></div>
-        <div class="child"><img src="images/casestudy2.png" alt="CaseStudy2" height="100%"></div>
-<div class="child"><img src="images/casestudythree.png" alt="CaseStudy3" height="100%"></div>          
+          <div class="tech-slideshow">
+        <div class="child">
+          <img src="images/casestudy2.png" alt="CaseStudy1" height="100%"><img src="images/casestudyone.png" alt="CaseStudy2" height="100%"><img src="images/casestudythree.png" height="100%">
+        </div>
+      </div>
       </div>
     </hero>
 
@@ -53,7 +61,7 @@
 
     <script>
       window.onload = function(){
-        var theDelay = 2;
+        var theDelay = 1;
         var timer = setTimeout("showText()",theDelay*1000)
       }
       function showText(){
@@ -62,7 +70,7 @@
 
 </script>
      
-<div id="delayedText" style="visibility:hidden" background="unset"><h3>Click an<br>image to<br>select a<br>project.<br><br>You'll need<br>some quiet<br>to read<br>the case<br>studies!~</h3></div>
+<div id="delayedText" style="visibility:hidden" background="unset"><h3>Click an<br>image to<br>select a<br>project.<br><br>There won't<br>be music<br>while you<br>read the<br> case studies!~</h3></div>
 
 <script>
   
