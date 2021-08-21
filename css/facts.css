@@ -69,68 +69,13 @@ background-color: #010101;
     background:#010101;
     height: 96%;
     font-family: monospace;
+    font-size: large;
+    font-weight: lighter;
     color:whitesmoke;
     text-align: center;
     vertical-align: center;
     overflow-y: scroll;
 }
-
-.tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
-}
-
-.tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.sinatra {
-vertical-align: center;
-}
-.excalibur {
-vertical-align: center;
-}
-.logos {
-  vertical-align: center;
-}
-.kolbe {
-  vertical-align: center;
-}
-.cultures {
-  vertical-align: center;
-  }
-  .music {
-  vertical-align: center;
-  }
-  .car {
-    vertical-align: center;
-  }
-  .wildlife {
-    vertical-align: center;
-  }
-  .beach {
-    vertical-align: center;
-    }
-    .concert {
-    vertical-align: center;
-    }
-    .rock {
-      vertical-align: center;
-    }
-    .transcript {
-      vertical-align: center;
-    }
-
-
-
-
-
-
-
-
-
 
 .footer{
     display: flex;
