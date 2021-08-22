@@ -132,6 +132,7 @@ background-color: #010101;
         background-image: url("../images/phones.png");
         background-size: 90%;
         background-position:right;
+        background-repeat: no-repeat;
     }
     .boardContainer {
         width: 60%;
