@@ -91,7 +91,7 @@ background-color: #010101;
   width: 152vw;
 }
 .tech-slideshow .child {
-  animation: moveSlideshow 18s linear alternate-reverse infinite;
+  animation: moveSlideshow 17s linear alternate-reverse infinite;
 }
 
 @keyframes moveSlideshow {
