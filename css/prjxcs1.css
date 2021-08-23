@@ -10,7 +10,7 @@
       width: 100%;
     }
   }
-
+  
 .foregrd {
     position: absolute;
     float: right;
@@ -32,6 +32,7 @@ background-color: #010101;
     text-align: left;
     margin-top: 1%;
     margin-left: 17%;
+    color: whitesmoke;
     font-family: "alex brush", cursive;
     font-size:x-large; 
 }
@@ -42,6 +43,7 @@ background-color: #010101;
     width: 20%;
     font-family: ds-digital;
     font-weight: lighter;
+    color:whitesmoke;
     text-align:right;
     margin-top: 2%;
     margin-right: 17%;
@@ -58,76 +60,55 @@ background-color: #010101;
     background-color: #010101;
     }
     
-.faxBox{
-    display: flex;
-    justify-content: center;
+.prjxBox{
+  display: flex;
     width: 66%;
-    box-shadow: 0px 0px 5px 5px #FF00C7;
-    margin: auto;
-    background:#010101;
     height: 96%;
+    box-shadow: 0px 0px 5px 5px #14EC11;
+    margin: auto;
+    background-color: #010101;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
-.mySlides {
-	display: none;
-	height: 100%;
-	font-family: Arial,Helvetica,sans-serif;
-}
-.mySlides img {
-	width: 100%;
-	height: 100%;
-}
-.slideshow-container {
-	overflow: hidden;
-	position: relative;
-	margin: auto;
-	width: 720px;
-	height: 390px;
-}
-.slide-prev, .slide-next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	margin-top: -22px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-}
-.slide-next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-.slide-prev:hover, .slide-next:hover {
-	background-color: rgba(0,0,0,0.8);
+.tech-slideshow {
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-/************CSS Animation***********/
-
-.animated { 
-   -webkit-animation-name: fadeIn; 
-           animation-name: fadeIn; 
-   -webkit-animation-duration: 1s; 
-           animation-duration: 1s; 
-} 
-@-webkit-keyframes fadeIn { 
-    0% {opacity: 0;} 
-    100% {opacity: 1;} 
-} 
-@keyframes fadeIn { 
-    0% {opacity: 0;} 
-    100% {opacity: 1;} 
-} 
-.fadeIn { 
-    -webkit-animation-name: fadeIn; 
-    animation-name: fadeIn; 
+.tech-slideshow > div {
+  height: 100%;
+  width: 152vw;
+}
+.tech-slideshow .child {
+  animation: moveSlideshow 18s linear alternate-reverse infinite;
 }
 
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-100%);  
+  }
+}
 
+::-webkit-scrollbar {
+  width: 0px;
+}
 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  -webkit-box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: none;
+}
 
 .footer{
     display: flex;
@@ -140,9 +121,9 @@ background-color: #010101;
     .phonesContainer{
         width: 20%;
         background-image: url("../images/phones.png");
-        background-repeat: no-repeat;
         background-size: 90%;
         background-position:right;
+        background-repeat: no-repeat;
     }
     .boardContainer {
         width: 60%;
@@ -194,7 +175,6 @@ background-color: #010101;
         padding-left: 3%; }
       
       .prjxPad { grid-area: prjxPad;
-        box-shadow: 0px 1px 2px 2px #14EC11;
         background-image: url("../images/blankPad.png"); 
         background-repeat: no-repeat;
         background-position: center;
@@ -259,6 +239,7 @@ background-color: #010101;
         padding-left: 3%; }
       
       .faxPad { grid-area: faxPad; 
+        box-shadow: 0px 1px 2px 2px #FF00C7;
         background-image: url("../images/blankPad.png"); 
         background-repeat: no-repeat;
         background-position: center;
@@ -271,7 +252,7 @@ background-color: #010101;
         padding-left: 3%;}
       
       .buffer { grid-area: buffer; }
-
+  
     .mouseContainer{
         width: 20%;
         background-image: url("../images/mouse.png"); 
@@ -280,6 +261,7 @@ background-color: #010101;
         background-size: 40%;
         background-position-x: -16%;
     }
+  
 
         .bottom-right {
             position: absolute;
@@ -293,84 +275,78 @@ background-color: #010101;
             z-index: 200;
           }
 
-  #delayedText{
-    position: absolute;
-    top: 40%;
-    left: 12%;
-    transform: translate(-50%, -50%);
-    text-align: right;
-    vertical-align: top;
-    color: whitesmoke;
-    font-family: monospace;
-    font-size: larger;
-    font-weight: bold;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    opacity: 0.8;
-  }
+          
 
-  .controls{
-    position: absolute;
-    left: 38%;
-    top: 5%;
-    opacity: 0.1;
-    height: 2%;
-    box-shadow: 0px 0px 8px 8px whitesmoke;
-    border-radius: 25%;
-}
+          #delayedText{
+            position: absolute;
+            top: 40%;
+            right: 16%;
+            transform: translate(-50%, -50%);
+            text-align: right;
+            vertical-align: top;
+            color: whitesmoke;
+            font-family: monospace;
+            font-size: larger;
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            opacity: 0.8;
+            z-index: 0;
+          }
 
-
+          
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: whitesmoke;
-  font-size: 18px;
-  transition: 0.9s ease;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: whitesmoke;
+    font-size: 18px;
+    transition: 0.9s ease;
+    user-select: none;
+    z-index: 100;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

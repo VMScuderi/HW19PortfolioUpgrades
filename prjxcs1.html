@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css\prjxcs1.css">
+  <title>Vito Scuderi - Case Study 1</title>
+</head>
+
+<body>
+    <img class="foregrd" src="images\pic.png" alt="ProfilePhoto" height="90%">
+
+  <header class="header">
+      <logoContainer class="logoContainer">
+        <a href="index.html" style="color: #c4c4c4"><H1>Vito Scuderi</H1></a>
+      </logoContainer>
+
+      <navContainer class="navContainer">
+        <a href="facts.html" style="width:10vw;height:10vh;border:0px solid grey; color:#c4c4c4"><H1>#FAX</H1></a>
+        <a href="sklz.html" style="width:10vw;height:10vh;border:0px solid grey; color:#c4c4c4"><H1>SKLZ</H1></a>
+        <a href="prjx.html" style="width:10vw;height:10vh;border:0px solid grey; color:#c4c4c4; text-decoration: underline"><H1>PRJX</H1></a>
+        <a href="mail.html" style="width:10vw;height:10vh;border:0px solid grey; color:#c4c4c4"><H1>MAIL</H1></a>
+      </navContainer>
+    </header>
+
+    <hero class="hero">
+        <div class="prjxBox">
+
+            
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX1.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX2.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX3.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX4.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX5.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX6.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX7.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX8.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX9.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX10.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX11.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX12.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX13.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="../HW19PortfolioUpgrades/images/FAX14.png" style="width:100%">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+            
+            </div>          
+            </div>
+  
+            <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+      </div>
+    </hero>
+
+    <footer class="footer">
+
+      <div class="phonesContainer">
+      </div>
+
+      <div class="boardContainer">
+        <a class="mailPad" href="mail.html">MAIL</a>
+        <a class="behcPad" href="https://www.behance.net/vitomscuderi" target="_blank">BEHC</a>
+        <a class="prjxPad" href="prjx.html">PRJX</a>
+        <a class="lnkdPad" href="https://www.linkedin.com/in/vitomscuderi2020/" target="_blank">LNKD</a>
+        <a class="sklzPad" href="sklz.html">SKLZ</a>
+        <a class="githPad" href="https://github.com/VMScuderi" target="_blank">GITH</a>
+        <a class="rsmePad" href="https://drive.google.com/file/d/15lFl0K_NBzasH36oAbPrI5XWN_vDQxLx/view?usp=sharing" target="_blank">RSME</a>
+        <a class="faxPad" href="facts.html">#FAX</a>
+        <div class="buffer"></div>
+      </div>
+
+      <div class="mouseContainer">
+      </div>
+
+    <p class="bottom-right">©2021 All Rights Reserved.</p>
+
+  </body>
+</html>
