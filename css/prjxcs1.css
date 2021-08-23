@@ -67,7 +67,6 @@ background-color: #010101;
     box-shadow: 0px 0px 5px 5px #14EC11;
     margin: auto;
     background-color: #010101;
-  overflow-x: scroll;
   overflow-y: hidden;
 }
 
@@ -83,15 +82,7 @@ background-color: #010101;
   height: 100%;
   width: 152vw;
 }
-.tech-slideshow .child {
-  animation: moveSlideshow 18s linear alternate-reverse infinite;
-}
 
-@keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-100%);  
-  }
-}
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -280,7 +271,7 @@ background-color: #010101;
           #delayedText{
             position: absolute;
             top: 40%;
-            right: 16%;
+            left: 10%;
             transform: translate(-50%, -50%);
             text-align: right;
             vertical-align: top;
@@ -288,8 +279,8 @@ background-color: #010101;
             font-family: monospace;
             font-size: larger;
             font-weight: bold;
-            letter-spacing: 1px;
-            line-height: 1.5;
+            letter-spacing: 0.9px;
+            line-height: 1.4;
             opacity: 0.8;
             z-index: 0;
           }
@@ -315,10 +306,10 @@ background-color: #010101;
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: whitesmoke;
+    color: #561662;
     font-size: 18px;
     transition: 0.9s ease;
-    user-select: none;
+    user-select:none;
     z-index: 100;
   }
   
