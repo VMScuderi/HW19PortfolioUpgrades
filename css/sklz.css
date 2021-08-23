@@ -32,7 +32,7 @@
     text-align: left;
     margin-top: 1%;
     margin-left: 17%;
-    color:#c4c4c4;
+    color:whitesmoke;
     font-family: "alex brush", cursive;
     font-size:x-large; 
 }
@@ -43,7 +43,7 @@
     width: 20%;
     font-family: ds-digital;
     font-weight: lighter;
-    color:#c4c4c4;
+    color:whitesmoke;
     text-align:right;
     margin-top: 2%;
     margin-right: 17%;
@@ -247,7 +247,7 @@
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   .controls{
