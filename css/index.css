@@ -5,11 +5,27 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navContainer {
-    float: none;
+  .audioContainer {
     width: 100%;
   }
+  .name {
+    visibility: hidden;
+  }
+  .foregrd {
+    height:40%;
+  }
+  .phonesContainer{
+  }
 }
+
+.foregrd {
+  position: absolute;
+  float: right;
+  right: 0%;
+       bottom: 0%;
+              vertical-align: bottom;
+              z-index: 100;
+                  }
 
 .header{
 display: flex;
@@ -90,15 +106,6 @@ justify-content: center;
         text-align: center;
         background: transparent;
       }
-
-    .foregrd {
-        position: absolute;
-        float: right;
-        right: 0%;
-             bottom: 0%;
-                    vertical-align: bottom;
-                    z-index: 100;
-                        }
 
     .footer{
         display: flex;
@@ -288,7 +295,7 @@ justify-content: center;
     text-align: center;
   }
   .slide {
-    animation: slideArrow 2s infinite;
+    animation: slideArrow 3s infinite;
   }
  @keyframes slideArrow {
     from {
