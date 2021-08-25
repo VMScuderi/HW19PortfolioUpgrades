@@ -83,12 +83,12 @@ background-color: #010101;
   width: 152vw;
 }
 .tech-slideshow .child {
-  animation: moveSlideshow 17s linear alternate-reverse infinite;
+  animation: moveSlideshow 25s linear alternate-reverse infinite;
 }
 
 @keyframes moveSlideshow {
-  100% { 
-    transform: translateX(-100%);  
+  50% { 
+    transform: translateX(-70%);  
   }
 }
 
