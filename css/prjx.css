@@ -11,15 +11,7 @@
     }
   }
   
-  .controls{
-    position: absolute;
-    left: 38%;
-    top: 5%;
-    opacity: 0.1;
-    height: 2%;
-    box-shadow: 0px 0px 8px 8px whitesmoke;
-    border-radius: 25%;
-}
+
 .foregrd {
     position: absolute;
     float: right;
@@ -39,10 +31,10 @@ background-color: #010101;
 .logoContainer{
     width: 80%;
     text-align: left;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: 17%;
-    font-family: "alex brush", cursive;
-    font-size:x-large; 
+    font-family: "ds-digital";
+    font-size:large; 
 }
 
 .navContainer{
@@ -126,15 +118,19 @@ background-color: #010101;
     background-size: 100vw;
   }
     
-    .phonesContainer{
-        width: 20%;
-        background-image: url("../images/phones.png");
-        background-size: 90%;
-        background-position:right;
-        background-repeat: no-repeat;
-    }
+  .phonesContainer{
+    width: 22%;
+    background-image: url("../images/phones.png");
+    background-size: 100%;
+    background-position:right;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+    margin-left: 4%;
+}
+
+
     .boardContainer {
-        width: 60%;
+        width: 58%;
         height: 100%;
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 2fr;
@@ -146,8 +142,9 @@ background-color: #010101;
           "buffer faxPad sklzPad prjxPad mailPad volFader"
           "buffer rsmePad lnkdPad githPad behcPad volFader"
           ". . . . . .";
-          background-image: url("../images/board.png");
-          background-size: 70%;
+          background-image: url("../images/board1.png");
+          filter:saturate(1.5);
+          background-size: 78%;
           background-repeat: no-repeat;
           background-position: center;
           background-position-y: -1%;
@@ -164,7 +161,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%; }
@@ -177,7 +174,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%; }
@@ -189,7 +186,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%; }
@@ -202,7 +199,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%;}
@@ -215,7 +212,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%;}
@@ -228,7 +225,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%; }
@@ -241,7 +238,7 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%; }
@@ -254,20 +251,21 @@ background-color: #010101;
         height: 100%;
         width: 90%;
         font-family: ds-digital;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: bold;
         color:#c4c4c4;
         padding-left: 3%;}
       
       .buffer { grid-area: buffer; }
   
-    .mouseContainer{
-        width: 20%;
+      .mouseContainer{
+        width: 22%;
         background-image: url("../images/mouse.png"); 
         background-repeat: no-repeat;
         background-position: center;
         background-size: 40%;
         background-position-x: -16%;
+        filter: brightness(0.7);
     }
   
 
@@ -293,11 +291,20 @@ background-color: #010101;
             text-align: right;
             vertical-align: top;
             color: whitesmoke;
-            font-family: monospace;
-            font-size: larger;
-            font-weight: bold;
+            font-family: poppins, sans-serif;
+            font-size: medium;
+            font-weight: normal;
             letter-spacing: 1px;
             line-height: 1.5;
-            opacity: 0.8;
-            z-index: 0;
+            opacity: 0.6;
           }
+
+          .controls{
+            position: absolute;
+            left: 38%;
+            top: 5.5%;
+            opacity: 0.2;
+            height: 1.5%;   
+            box-shadow: 0px 0px 8px 8px whitesmoke;
+            border-radius: 20%;
+        }
