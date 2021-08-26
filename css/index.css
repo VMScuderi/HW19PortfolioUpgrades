@@ -29,6 +29,9 @@
   .slide{
     visibility: hidden;
   }
+  .intro{
+    font-size: smaller;
+  }
 }
 
 .foregrd {
