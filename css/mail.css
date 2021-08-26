@@ -4,18 +4,25 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-.audioContainer {
-  width: 100%;
-}
-.name {
-  visibility: hidden;
-}
-.foregrd {
-  height:40%;
-}
-.phonesContainer{
-}
+@media screen and (max-width: 800px) {
+  .audioContainer {
+    width: 100%;
+  }
+  .name {
+    visibility: hidden;
+  }
+  .foregrd {
+    height:40%;
+  }
+  .phonesContainer{
+    width: 0%;
+  }
+  .footer{
+    max-height:10vh;
+  }
+  .w3-button{ 
+    a href="sms:+17053335267?body=Hey Vito!;
+  }
 }
 
 .foregrd {
@@ -30,7 +37,7 @@
                     .header{
                       display: flex;
                       justify-content: center;
-                      height: 10vh;
+                      height: 9vh;
                       background-color: #010101;
                       }
 
@@ -49,14 +56,13 @@
                           justify-content: left;
                           height: 50%;
                           width: 40vw;
-                          margin-top: 1.8%;
+                          margin-top: 2%;
                         }
 
                         .controls{
-                          opacity: 0.3;
-                          height: 3vh;
+                          opacity: 0.4;
+                          height: 2.4vh;
                           width: 100%;
-                          box-shadow: 0px 1px 2px 2px;
                         }
                         
                         .logo{
@@ -67,7 +73,7 @@
                         .name{
                           float: left;
                           font-size: x-large;
-                          color: rgb(90, 90, 90);
+                          color: rgb(120, 120, 120);
                           vertical-align: middle;
                           font-family: ds-digital;
                           letter-spacing: 1px;
@@ -77,7 +83,7 @@
 .hero{
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 61vh;
     background-image: url("../images/daw2.png"); 
     background-repeat: no-repeat;
     background-position: center;
@@ -89,10 +95,10 @@
     display: flex;
     justify-content: center;
     width: 66%;
+    height: 95%;
     box-shadow: 0px 0px 5px 5px #EC4915;
     margin: auto;
     background:#010101;
-    height: 96%;
     background-image: url("../images/beachmail.png"); 
     background-repeat: no-repeat;
     background-position: left;
@@ -108,13 +114,23 @@
   }
     
   .phonesContainer{
-    width: 22%;
+    width: 17%;
     background-image: url("../images/phones.png");
-    background-size: 100%;
+    background-size: 115%;
     background-position:right;
     background-repeat: no-repeat;
     filter: invert(100%);
     margin-left: 4%;
+}
+
+.mouseContainer{
+  width: 23%;
+  background-image: url("../images/mouse.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-position-x: -16%;
+  filter: brightness(0.7);
 }
 
     .boardContainer {
@@ -123,7 +139,7 @@
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 2fr;
         grid-template-rows: 4% 40% 40% 0%;
-        gap: 5% 0.5%;
+        gap: 5% 1.5%;
         grid-auto-flow: row;
         grid-template-areas:
           ". . . . . ."
@@ -132,10 +148,10 @@
           ". . . . . .";
           background-image: url("../images/board1.png");
           filter:saturate(1.5);
-          background-size: 78%;
+          background-size: 76%;
           background-repeat: no-repeat;
           background-position: center;
-          background-position-y: -1%;
+          background-position-y: -0.5%;
       }
       
       .volFader { grid-area: volFader; 
@@ -146,7 +162,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -159,7 +175,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -172,7 +188,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -185,7 +201,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -198,7 +214,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -211,7 +227,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -224,7 +240,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -237,7 +253,7 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -246,16 +262,7 @@
       
       .buffer { grid-area: buffer; }
   
-      .mouseContainer{
-        width: 22%;
-        background-image: url("../images/mouse.png"); 
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 40%;
-        background-position-x: -16%;
-        filter: brightness(0.7);
-    }
-  
+
 
 
         .bottom-right {
@@ -273,8 +280,8 @@
 
   #delayedText{
     position: absolute;
-    top: 40%;
-    right: 12%;
+    top: 34%;
+    right: 11%;
     transform: translate(-50%, -50%);
     text-align: right;
     vertical-align: top;
@@ -295,10 +302,9 @@
   background-color: rgb(255, 196, 0);
   border-color: rgb(0, 69, 158);
   border-width:thick;
-  border-radius: 60%;
-  height: 20%;
-  margin-top: 28%;
-  margin-left: 81%;
+  height: 16%;
+  margin-top: 34%;
+  margin-left: 84%;
   z-index: 1;
 }
 

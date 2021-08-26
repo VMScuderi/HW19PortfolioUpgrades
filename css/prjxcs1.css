@@ -4,12 +4,26 @@
     text-decoration: none;
 }
 
-@media screen and (max-width: 600px) {
-    .navContainer {
-      float: none;
-      width: 100%;
-    }
+@media screen and (max-width: 800px) {
+  .audioContainer {
+    width: 100%;
   }
+  .name {
+    visibility: hidden;
+  }
+  .foregrd {
+    height:40%;
+  }
+  .phonesContainer{
+    width: 0%;
+  }
+  .footer{
+    max-height:10vh;
+  }
+  .w3-button{ 
+    a href="sms:+17053335267?body=Hey Vito!;
+  }
+}
   
 .foregrd {
     position: absolute;
@@ -20,37 +34,55 @@
                 z-index: 100;
                     }
 
-.header{
-display: flex;
-justify-content: space-evenly;
-height: 10vh;
-background-color: #010101;
-}
+                    .header{
+                      display: flex;
+                      justify-content: center;
+                      height: 9vh;
+                      background-color: #010101;
+                      }
 
-.logoContainer{
-  width: 80%;
-  text-align: left;
-  margin-top: 2%;
-  margin-left: 17%;
-  font-family: "ds-digital";
-  font-size:large; 
-}
+                      .logoContainer{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: right;
+                          height: 50%;
+                          width: 22vw;
+                          margin-top: 1%;
+                        }
 
-.navContainer{
-  display: flex;
-  justify-content: space-around;
-  width: 20%;
-  font-family: ds-digital;
-  font-weight: lighter;
-  text-align:right;
-  margin-top: 2%;
-  margin-right: 17%;
-}
+                        .audioContainer{
+                          display: flex;
+                          justify-content: left;
+                          height: 50%;
+                          width: 40vw;
+                          margin-top: 2%;
+                        }
+
+                        .controls{
+                          opacity: 0.4;
+                          height: 2.4vh;
+                          width: 100%;
+                        }
+                        
+                        .logo{
+                          height:6vh;
+                          float: left;
+                        }
+                        
+                        .name{
+                          float: left;
+                          font-size: x-large;
+                          color: rgb(120, 120, 120);
+                          vertical-align: middle;
+                          font-family: ds-digital;
+                          letter-spacing: 1px;
+                        }
 
 .hero{
     display: flex;
     justify-content: center;
-    height: 60vh;
+    height: 61vh;
     background-image: url("../images/daw2.png"); 
     background-repeat: no-repeat;
     background-position: center;
@@ -58,15 +90,19 @@ background-color: #010101;
     background-color: #010101;
     }
     
-.prjxBox{
-  display: flex;
-    width: 66%;
-    height: 96%;
-    box-shadow: 0px 0px 5px 5px #14EC11;
-    margin: auto;
-    background-color: #010101;
-  overflow-y: hidden;
-}
+    .prjxBox{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      row-gap: 0%;
+        width: 66%;
+        height: 95%;
+        box-shadow: 0px 0px 5px 5px #14EC11;
+        margin: auto;
+        background-color: #010101;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
 
 .tech-slideshow {
   height: 100%;
@@ -108,13 +144,23 @@ background-color: #010101;
   }
     
   .phonesContainer{
-    width: 22%;
+    width: 17%;
     background-image: url("../images/phones.png");
-    background-size: 100%;
+    background-size: 115%;
     background-position:right;
     background-repeat: no-repeat;
     filter: invert(100%);
     margin-left: 4%;
+}
+
+.mouseContainer{
+  width: 23%;
+  background-image: url("../images/mouse.png"); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  background-position-x: -16%;
+  filter: brightness(0.7);
 }
 
 
@@ -124,7 +170,7 @@ background-color: #010101;
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 2fr;
         grid-template-rows: 4% 40% 40% 0%;
-        gap: 5% 0.5%;
+        gap: 5% 1.5%;
         grid-auto-flow: row;
         grid-template-areas:
           ". . . . . ."
@@ -133,10 +179,10 @@ background-color: #010101;
           ". . . . . .";
           background-image: url("../images/board1.png");
           filter:saturate(1.5);
-          background-size: 78%;
+          background-size: 76%;
           background-repeat: no-repeat;
           background-position: center;
-          background-position-y: -1%;
+          background-position-y: -0.5%;
       }
       
       .volFader { grid-area: volFader; 
@@ -148,7 +194,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -161,7 +207,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -173,7 +219,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -186,7 +232,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -199,7 +245,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -212,7 +258,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -225,7 +271,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -238,7 +284,7 @@ background-color: #010101;
         background-repeat: no-repeat;
         background-position: center;
         height: 100%;
-        width: 90%;
+        width: 100%;
         font-family: ds-digital;
         font-size: x-large;
         font-weight: bold;
@@ -246,16 +292,6 @@ background-color: #010101;
         padding-left: 3%;}
       
       .buffer { grid-area: buffer; }
-  
-      .mouseContainer{
-        width: 22%;
-        background-image: url("../images/mouse.png"); 
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 40%;
-        background-position-x: -16%;
-        filter: brightness(0.7);
-    }
   
 
         .bottom-right {

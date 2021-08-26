@@ -4,7 +4,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .audioContainer {
     width: 100%;
   }
@@ -15,19 +15,6 @@
     height:40%;
   }
   .phonesContainer{
-    width: 0%;
-  }
-  .footer{
-    max-height:10vh;
-  }
-  .grid{
-    visibility: hidden;
-  }
-  .gridChild{
-    visibility: hidden;
-  }
-  .slide{
-    visibility: hidden;
   }
 }
 
@@ -51,18 +38,19 @@ margin: auto;
 
 .logoContainer{
 margin: auto;
-padding-top: 0.6%;
+margin-left: 5.5%;
+padding-top: 1%;
 }
 
 .audioContainer{
   margin: auto;
-  padding-top: 0.4%;
+  padding-top: 0.5%;
 }
 
 .controls{
   opacity: 0.4;
-  height: 2.4vh;
-  width: 50vw;
+  height: 0vh;
+  width: 90vw;
 }
 
 .logo{
@@ -82,10 +70,10 @@ padding-top: 0.6%;
     display: flex;
     justify-content: space-evenly;
     height: 60vh;
-    background-image: url("../images/daw2.png"); 
+    background-image: url("../images/daw.png"); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vw 82vh;
+    background-size: 99vw 92vh;
     background-color: #010101;
     }
     
@@ -93,24 +81,16 @@ padding-top: 0.6%;
         width: 20%;
         background:transparent;
     }
-
-    .rightHeroPic{
-      width: 20%;
-      background:transparent;
-  }
     
     .ctrHeroText{
-      width: 60%;
         background:transparent;
-        display: flex;
-        justify-content: center;
     }
      
     .intro {
-margin: auto;
-padding-top: 7%;
-text-align: center;
-font-size: xx-large;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         font-family: monospace;
         font-weight: bold;
         letter-spacing: 1px;
@@ -129,32 +109,22 @@ font-size: xx-large;
       }
         
         .phonesContainer{
-            width: 17%;
+            width: 22%;
             background-image: url("../images/phones.png");
-            background-size: 115%;
+            background-size: 100%;
             background-position:right;
             background-repeat: no-repeat;
             filter: invert(100%);
             margin-left: 4%;
         }
 
-        .mouseContainer{
-          width: 23%;
-          background-image: url("../images/mouse.png"); 
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: 40%;
-          background-position-x: -16%;
-          filter: brightness(0.7);
-      }
-
         .boardContainer {
-            width: 60%;
+            width: 58%;
             height: 100%;
             display: grid;
             grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 2fr;
             grid-template-rows: 4% 40% 40% 0%;
-            gap: 5% 1.5%;
+            gap: 5% 0.5%;
             grid-auto-flow: row;
             grid-template-areas:
               ". . . . . ."
@@ -163,10 +133,10 @@ font-size: xx-large;
               ". . . . . .";
               background-image: url("../images/board1.png");
               filter:saturate(1.5);
-              background-size: 76%;
+              background-size: 78%;
               background-repeat: no-repeat;
               background-position: center;
-              background-position-y: -0.5%;
+              background-position-y: -1%;
           }
           
           .volFader { grid-area: volFader; 
@@ -178,7 +148,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -191,7 +161,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -204,7 +174,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -217,7 +187,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -230,7 +200,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -243,7 +213,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -256,7 +226,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -269,7 +239,7 @@ font-size: xx-large;
             background-repeat: no-repeat;
             background-position: center;
             height: 100%;
-            width: 100%;
+            width: 90%;
             font-family: ds-digital;
             font-size: x-large;
             font-weight: lighter;
@@ -278,7 +248,15 @@ font-size: xx-large;
           
           .buffer { grid-area: buffer; }
 
-
+        .mouseContainer{
+            width: 22%;
+            background-image: url("../images/mouse.png"); 
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 40%;
+            background-position-x: -16%;
+            filter: brightness(0.7);
+        }
 
         .bottom-right {
             position: absolute;
@@ -310,17 +288,32 @@ font-size: xx-large;
     text-align: center;
   }
   .slide {
-    animation: slideArrow 2.8s infinite;
+    animation: slideArrow 3s infinite;
   }
  @keyframes slideArrow {
     from {
-      margin-right: -7vh;
+      margin-right: -6vh;
     }
     50% 
     {
-      margin-right: 50vh;
+      margin-right: 45vh;
     }
     to {
-      margin-right: -7vh;
+      margin-right: -6vh;
     }
+  }
+
+
+
+  .navContainer{
+    height: 50%;
+    width: 40%;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+    font-family: ds-digital;
+    font-size: x-large;
+    font-weight:lighter;
+    align-content: center;
+    margin-top: 1%;
   }
