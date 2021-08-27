@@ -5,6 +5,39 @@
 }
 
 @media screen and (max-width: 800px) {
+
+  .behcPad{
+    height: 50%;
+    width: 50%;
+  }
+  .githPad{
+    height: 50%;
+    width: 50%;
+  }
+  .prjxPad{
+    height: 50%;
+    width: 50%;
+  }
+  .lnkdPad{
+    height: 50%;
+    width: 50%;
+  }
+  .rsmePad{
+    height: 50%;
+    width: 50%;
+  }
+  .sklzPad{
+    height: 50%;
+    width: 50%;
+  }
+  .faxPad{
+    height: 50%;
+    width: 50%;
+  }
+  .mailPad{
+    height: 50%;
+    width: 50%;
+  }
   .audioContainer {
     width: 100%;
   }
