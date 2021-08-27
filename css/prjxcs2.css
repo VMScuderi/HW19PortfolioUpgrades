@@ -102,6 +102,7 @@ background-color: #010101;
         background-color: #010101;
       overflow-x: hidden;
       overflow-y: hidden;
+      cursor: zoom-in;
     }
 
 .tech-slideshow {
